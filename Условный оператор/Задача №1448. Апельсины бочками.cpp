@@ -1,0 +1,18 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cin >>n;
+    if (n%100 ==1 || ((n% 20 == 1||n%20 == 11)&& n%100 >20 ))
+    {cout << n << " " << "bochka";}
+    else if ((n >1&& n<5 && n <100) || (((n% 20 >1 && n%20 <5)||(n% 20 >11 && n%20 <15 && (n%100 <=5 || n %100 >=20) ))&& n>20 ))
+    {cout << n << " " << "bochki";}
+    else {cout << n << " " << "bochek";}
+
+    return 0; //1 korova 2 korovy 3,4 korovy 5,6,7,8,9,10,11,12,13,14,15-20, 21 roro korov
+}
